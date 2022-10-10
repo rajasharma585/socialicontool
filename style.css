@@ -1,0 +1,108 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+body{
+  background: #303030;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h2{
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.container .social{ /* terakhir abis .social a */
+  display: flex;
+}
+
+.container .social a{
+  display: block;
+  font-size: 26px;
+  /* sementara nanti dihapus lagi pas udah yang habis a:before */ background: lightblue;
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 8px;
+  position: relative;
+  top: 0px;
+  transition: top 0.3s; /* nanti pas ada hover */
+}
+
+.container .social a:before{
+  display: block;
+  color: #2E2E2E;
+  background: #444; /* nanti dihapus setelah a.fa-github tapi nanti dimunculin lagi */
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 6px;
+  box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
+  text-shadow: 1.5px 1px 0px rgba(255, 255, 255, 0.1);
+  transition: 0.3s; /* nanti pas ada hover */
+}
+
+.container .social a.fa-twitter{
+  background: #2DAAE4;
+}
+
+.container .social a.fa-facebook{
+  background: #3C5A98;
+}
+
+/*.container .social a.fa-dribbble{
+  background: #C4376B;
+}
+
+.container .social a.fa-linkedin{
+  background: #006599;
+}
+
+.container .social a.fa-tumblr{
+  background: #51718A;
+}
+
+.container .social a.fa-google-plus{
+  background: #DA2713;
+}*/
+
+.container .social a.fa-github{
+  background: #FAFAFA;
+}
+.container .social a.fa-instagram {
+      background: #bc2a8d;
+      
+    }
+.container .social a.fa-whatsapp{
+      background: #12AD2B;
+      
+    }
+.container .social a.fa-youtube{
+      background: #FF0000;
+     
+    }
+
+
+/* hover */
+
+.container .social a:hover{
+  top: -5px;
+}
+
+.container .social a:hover:before{
+  background: transparent;
+}
